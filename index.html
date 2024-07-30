@@ -1,0 +1,148 @@
+<html>
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+	
+	<style>
+	
+		.body-style {
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fc6a84+0,fca9bc+50,6d0019+100 */
+			margin: 0 auto;
+			background: #fc6a84; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fc6a84 0%, #fca9bc 50%, #6d0019 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #fc6a84 0%,#fca9bc 50%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #fc6a84 0%,#fca9bc 50%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc6a84', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+			
+		}
+		.text-title {
+			text-align: 
+			center;
+			color: #ffff00;
+			font-size:40px;
+			text-shadow: 1px 1px 2px gray, 0 0 30px white, 0 0 5px darkblue;
+		}
+		.text-app {
+			text-align: center;
+			color: #ffff00;
+			margin: 8px;
+			font-size:small;
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		}
+		.text-regular {
+			text-align: 
+			center;
+			color: #ffffff;
+			font-size:14px;
+			text-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 15px darkblue;
+		}
+		.text-small {
+			text-align: 
+			center;
+			color: #ffffff;
+			font-size:8px;
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		}
+	</style>
+	
+<script>
+    /*
+	 <table style="border-collapse: collapse; width: 25%; float: left;" border="1">
+			<tbody>
+				<tr>
+					<td style="text-align: center;color: #ffff00;">
+					<a href="https://play.google.com/store/apps/details?id=com.social.sudoku_master">
+						<img style="border-radius: 10%;" src="https://play-lh.googleusercontent.com/VZ8H7GZOwcOe0fG9ynD3FtJJuHD6eTSoggbOPuOMbEqJFDnmv934eamLdAMd-UffL_k=s256-rw" alt="Sudoku – Classic Brain Puzzle" width="100" height="100"/>
+						<div style="text-align: center;color: #ffff00;">Sudoku – Classic Brain Puzzle</div>					
+					</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	*/
+	
+	function loading() {
+	/*
+	var arrApps = [
+				{ name: "Bubble Shooter in Space", href: "https://play.google.com/store/apps/details?id=com.DanToolsLab.BubbleShooterInSpace", icon: "app-icons/bubbles.webp" },
+				{ name: "Space Shooter Galaxy Master", href: "https://play.google.com/store/apps/details?id=com.DanToolsLab.SpaceShooter", icon: "app-icons/number-match.webp" },
+				{ name: "Slicing and Cutting", href: "https://play.google.com/store/apps/details?id=com.social.slice", icon: "app-icons/slicing.webp" },
+				{ name: "Sudoku Classic Brain Puzzle", href: "https://play.google.com/store/apps/details?id=com.social.sudoku_master", icon: "app-icons/sort-ball.webp" },
+				{ name: "Sort Ball Expert", href: "https://play.google.com/store/apps/details?id=com.social.ballsortexpert_puzzlegame", icon: "app-icons/space-shooter.webp" },
+				{ name: "Word Search Master", href: "https://play.google.com/store/apps/details?id=com.social.wordsearchexpert", icon: "app-icons/sudoku.webp" },
+				{ name: "Number Match Expert", href: "https://play.google.com/store/apps/details?id=com.social.numbermatch", icon: "app-icons/words.webp" },
+				{ name: "Falling Match Sticks", href: "https://play.google.com/store/apps/details?id=com.social.fallingmatchsticks", icon: "app-icons/match-sticks.webp" }
+			];
+	*/
+			var arrApps = [
+				{ name: "Bubble Shooter", href: "https://play.google.com/store/apps/details?id=com.DanToolsLab.BubbleShooterInSpace", icon: "app-icons/bubbles.webp" },
+				{ name: "Space Shooter", href: "https://play.google.com/store/apps/details?id=com.DanToolsLab.SpaceShooter", icon: "app-icons/space-shooter.webp" },
+				{ name: "Slicing and Cutting", href: "https://play.google.com/store/apps/details?id=com.social.slice", icon: "app-icons/slicing.webp" },
+				{ name: "Sudoku Puzzle", href: "https://play.google.com/store/apps/details?id=com.social.sudoku_master", icon: "app-icons/sudoku.webp" },
+				{ name: "Sort Balls", href: "https://play.google.com/store/apps/details?id=com.social.ballsortexpert_puzzlegame", icon: "app-icons/sort-ball.webp" },
+				{ name: "Word Search", href: "https://play.google.com/store/apps/details?id=com.social.wordsearchexpert", icon: "app-icons/words.webp" },
+				{ name: "Number Match", href: "https://play.google.com/store/apps/details?id=com.social.numbermatch", icon: "app-icons/number-match.webp" },
+				{ name: "Falling Match Sticks", href: "https://play.google.com/store/apps/details?id=com.social.fallingmatchsticks", icon: "app-icons/match-sticks.webp" },
+				{ name: "Fireworks Shooter", href: "https://play.google.com/store/apps/details?id=com.social.fireworksshooter", icon: "app-icons/fireworks.webp" }
+			];
+			for (var i = 0; i < arrApps.length; i++) {
+				addApp(arrApps[i].name, arrApps[i].href, arrApps[i].icon);
+			}
+
+			
+	}
+	
+	function addApp(name, href, icon) {
+		document.getElementById("apps").innerHTML += 
+			"<table style='border-collapse: collapse; width: 25%; float: left;' border='0'>\
+				<tbody> \
+					<td style='text-align: center;color: #ffff00;'>\
+						<a href='" + href +"'>\
+							<img style='border-radius: 10%;' src='" + icon +"' alt='" + name +"' width='60%' height=''/>\
+							<div class='text-app'>" + name +"</div>\
+						</a>\
+						<p>&nbsp;</p>\
+					</td>\
+				</tbody>\
+			</table>";
+	}
+	
+</script>
+
+	<body class="body-style" onload="loading();">
+		<div style="background-image: url('bg.jpg'); background-size: cover; background-repeat: no-repeat; ">
+			<p>&nbsp;</p>
+			<h1 class="text-title">DanTools Lab Games</h1>
+			
+			<p style="text-align: center;">
+				<a href="https://play.google.com/store/apps/developer?id=DanTools+Lab&amp;hl=en&amp;gl=US">
+					<img src="googleplaystore.png" alt="Google Play Store" height="50"/>
+				</a>
+			</p>
+			<p style="text-align: center;">&nbsp;</p>
+			
+			<div id="apps">
+			</div>
+				
+			
+			<p style="clear: both;">&nbsp;</p>
+			
+			<div>
+				<br/>
+				<br/>
+				<br/>
+				<p class="text-regular">Support - Feedback - Recruitment</p>
+				<p class="text-regular">appsup.pcsoftware@gmail.com</p>
+				<br/>
+				<p class="text-regular">Address</p>
+				<p class="text-regular">Kefar Sabe, Israel</p>
+				<br/>
+				<p class="text-regular"><em>It is all for fun: DanTools Lab</em></p>
+
+				<br/>
+				<a href="https://www.freepik.com/free-vector/neon-pink-ladscape_4394256.htm#query=background%20game&position=7&from_view=search&track=ais" 
+				 class="text-small">Image by rawpixel.com on Freepik</a>
+			</div>
+		</div>
+	</body>
+</html>
